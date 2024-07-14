@@ -2,10 +2,10 @@
 <html lang='en'>
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="avid computer engineer" />
-  <link rel="icon" type="image/x-icon" href="lain.ico">
+  <link rel="icon" type="image/x-icon" href="lain.ico" />
   <title>oggy's room</title>
   <style>
     @font-face {
@@ -19,22 +19,41 @@
       background-color: black;
       color: white;
       font-family: "Consolas";
-      height: 100%;
       margin: auto;
       margin-top: 10vh;
-      margin-bottom: 20vh;
+      margin-bottom: 15vh;
       line-height: 1.2em;
-      display: flex;
-      justify-content: center;
       align-items: center;
       text-align: center;
       cursor: url("wii-pointer-ccw.cur") 16 16, auto;
 
     }
 
-    .content {
-      max-width: 650px;
-      margin: auto;
+    body p:not(:nth-child(2)) {
+      margin-top: 30px;
+    }
+
+    body p:nth-child(2) {
+      margin-top: 0px;
+    }
+
+    body h3:first-child {
+      margin-bottom: 5px;
+    }
+
+    body h4 {
+      margin-top: 30px;
+    }
+
+    body h5 {
+      margin: 0px;
+      font-weight: 100;
+    }
+
+    @media only screen and (max-width: 650px) {
+      body {
+        width: 90vw !important;
+      }
     }
 
     ul.a {
@@ -53,42 +72,45 @@
       color: #74a4d4;
     }
   </style>
-  <link href="/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body>
+  <main>
 
-  <div class="container">
-    <h4>紅葉</h4>
-    <h2>oggy's room</h3><br>
+    <div class="container">
+      <h4>紅葉</h4>
+      <h2>oggy's room</h3><br>
 
-      <h4>hi! i'm oggy. i made this site to share my interests to the world and my internet friends. have a nice stay :3
-      </h4>
-
-
-      <h4>dm me <a href="https://x.com/oggyxe">@oggyxe</a></h4>
-      <img src="lainsmall3.gif">
+        <h4>hi! i'm oggy. i made this site to share my interests to the world and my internet friends. have a nice stay
+          :3
+        </h4>
 
 
-
-      <h3><a href="projects.html">kitchen</a> - <a href="chamber.html">chamber</a> - <a href="culture.html">culture</a>
-      </h3>
+        <h4>dm me <a href="https://x.com/oggyxe">@oggyxe</a></h4>
+        <img src="lainsmall3.gif">
 
 
 
-      <h4>..blog ? (WIP)</h4>
-      <br />
-      <marquee behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();" direction="left" loop="">
+        <h3><a href="projects.html">kitchen</a> - <a href="chamber.html">chamber</a> - <a
+            href="culture.html">culture</a>
+        </h3>
 
-        <a href="https://fauux.neocities.org"><img src="http://fauux.neocities.org/wiredcollectivebutton2.gif"
-            alt="faaux"></a>
-        <a href="https://oggy.sh/"><img src="/oggy.gif" alt="my button"></a>
-        <a href="https://actovania.neocities.org/"><img
-            src="https://actovania.neocities.org/buttons/button-actovania.gif" alt="actovania"></a>
 
-      </marquee>
 
-  </div>
+        <h4>..blog ? (WIP)</h4>
+        <br />
+        <marquee behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();" direction="left" loop="">
+
+          <a href="https://fauux.neocities.org"><img src="http://fauux.neocities.org/wiredcollectivebutton2.gif"
+              alt="faaux"></a>
+          <a href="https://oggy.sh/"><img src="/oggy.gif" alt="my button"></a>
+          <a href="https://actovania.neocities.org/"><img
+              src="https://actovania.neocities.org/buttons/button-actovania.gif" alt="actovania"></a>
+
+        </marquee>
+
+    </div>
+  </main>
 </body>
 
 </html>
