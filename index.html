@@ -25,6 +25,20 @@
 
     }
    
+		h1 {
+    text-align: center;
+		}
+
+		.head {
+    text-align: left;
+    color: #FFF;
+    background: #74a4d4;
+    font-size: 11pt;
+    padding: 0.2em 4em;
+    margin: 1.5em 0;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000;
+		}
 
     .top-content {
       text-align: left;
@@ -37,7 +51,6 @@
     .top-content h3 {
       margin-top: 5px; /* Reduce the space between "oggy" and "紅葉" */
     }
-
 
     body hr {
       border: 1.5px dotted white;
@@ -79,16 +92,26 @@
 
 
     a:link {
-      color: #74a4d4;
+       color: #74a4d4;
       background-color: transparent;
       text-decoration: none;
     }
 
-    /* visited link */
+  	.head a,
+		.head a:visited,
+		.head a:hover,
+		.head a:active {
+  		color: white;
+		}
+    
+
     a:visited {
       color: #74a4d4;
     }
-  </style>
+	
+
+		
+</style>
 </head>
 
 <body>
@@ -109,12 +132,14 @@
 
       <h4><a href="kitchen.html">kitchen</a>
       </h4>
+		
+
+      
+      <h1 class="head">
+		  	<a href="lifetime-os.html">BLOG ONE: LIFETIME OS AS A PATCHSET</a>
+			</h1>
 
 
-
-
-
-      <p>..blog ? (WIP)</p>
       <hr />
       <br />
       <marquee behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();" direction="left" loop="">

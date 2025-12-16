@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="lifetime os as a patchset (kernel mail style)" />
+  <link rel="icon" type="image/x-icon" href="lain.ico" />
+  <title>oggy's room — lifetime os</title>
+
+  <style>
+    html, body {
+      width: 100%;
+      max-width: 650px;
+      background-color: #000;
+      color: #fff;
+      font-family: Consolas, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
+      margin: auto;
+      margin-top: 10vh;
+      margin-bottom: 15vh;
+      line-height: 1.25em;
+      align-items: center;
+      text-align: center;
+      cursor: url("wii-pointer-ccw.cur") 16 16, auto;
+    }
+
+    h1 { text-align: center; }
+    hr { border: 1.5px dotted #fff; }
+
+    a:link, a:visited {
+      color: #74a4d4;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    .head {
+      text-align: left;
+      color: #fff;
+      background: #74a4d4;
+      font-size: 11pt;
+      padding: 0.2em 4em;
+      margin: 1.5em 0;
+      text-transform: uppercase;
+      text-shadow: 2px 2px #000;
+    }
+
+    .top-content {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .top-content p { margin-bottom: 10px; }
+    .top-content h3 { margin-top: 5px; }
+
+    .post { text-align: left; }
+    .meta { opacity: 0.9; }
+    .muted { opacity: 0.75; }
+
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: rgba(255,255,255,0.05);
+      border: 1px dashed rgba(255,255,255,0.35);
+      padding: 12px;
+      margin: 14px 0;
+      border-radius: 2px;
+      overflow-wrap: anywhere;
+      text-align: left;
+    }
+
+    .tags {
+      margin-top: 10px;
+      opacity: 0.85;
+      font-size: 10pt;
+    }
+
+    ul {
+      margin: 0.4em 0 0.8em 1.2em;
+      padding: 0;
+      text-align: left;
+    }
+    li { margin: 0.2em 0; }
+
+    @media only screen and (max-width: 650px) {
+      html, body { width: 90vw !important; margin-top: 6vh; }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="top-content">
+      <p>紅葉</p>
+      <h3>oggy</h3>
+      <div class="meta">
+        <span class="muted"><a href="index.html">home</a> / blog / lifetime-os</span>
+      </div>
+      <div class="tags muted">
+        <span>tags: discipline, systems, kernel-mail, focus</span>
+      </div>
+    </div>
+
+    <hr />
+
+    <h1 class="head">BLOG: LIFETIME OS AS A PATCHSET</h1>
+
+    <div class="post">
+      <p class="muted">
+        i wanted a constitution that reads like upstream: explicit invariants, minimal prose, no bargaining.
+        the point is not “restriction aesthetics” — it’s reducing entropy in my nervous system so i can ship.
+      </p>
+
+      <pre>
+From: oggyfoxy &lt;oggyfoxy@localhost&gt;
+To: oggyfoxy &lt;oggyfoxy@localhost&gt;
+Cc: focus@localhost, agency@localhost
+Subject: [PATCH v2 0/1] lifetime-os: rewrite as axioms; reduce brittleness; add safety gates; move metrics to review
+Date: Mon, 15 Dec 2025 17:00:00 +0100
+Message-Id: &lt;20251215-lifetime-os-v2-0@localhost&gt;
+
+This is a rewrite of my personal operating system as a small set of
+axioms + protocols.
+
+Rationale:
+- category 1: hard lines (no debate)
+- category 2a: stability (minimum viable day)
+- category 2b: throughput (weekly quotas, no streak-collapse)
+- category 3: interrupt handlers (urges/anxiety/focus)
+- safety: gates for real medical care; ban reassurance-seeking
+
+Signed-off-by: oggyfoxy &lt;oggyfoxy@localhost&gt;
+
+---
+
+diff --git a/LIFETIME_OS.txt b/LIFETIME_OS.txt
+new file mode 100644
+index 0000000..2222222
+--- /dev/null
++++ b/LIFETIME_OS.txt
+@@ -0,0 +1,153 @@
++LIFETIME OS (oggyfoxy, 21) — v2
++Start: 2025-12-15 (Europe/Paris)
++
++0) CORE AXIOMS (NO NEGOTIATION)
++- I do not trade long-term agency for short-term relief.
++- I do not “check” feelings with compulsions (porn, pulse, scrolling).
++- I act on gates + principles, not on fear.
++- Consistency beats intensity. Simple beats clever.
++- Environment &gt; willpower. Sleep &gt; hacks.
++
++1) HARD BANS (CATEGORY 1: NEVER)
++Substances:
++- no alcohol
++- no recreational drugs
++- no nicotine (tobacco/vape/pouches)
++- no gambling
++
++Sex / validation:
++- no porn (any format)
++- no masturbation
++- no casual sex (hookups/fwb/situationships)
++- no paid sexual content/services (onlyfans/escorts/strip clubs/etc.)
++- no sexual/romantic DMs for validation outside a committed relationship
++- no “testing” the addiction (testing == relapse)
++
++Reassurance-seeking:
++- no symptom googling
++- no pulse/heart checking rituals
++- no looping “am I okay?” scans
++
++2) DAILY INVARIANTS (CATEGORY 2A: MUST, MINIMUM SET)
++- Wake time fixed: ±30 min, 7/7.
++- Phone stays out of bedroom. Bed is sleep + paper book only.
++- Deep work before dopamine:
++  - 90 minutes focused work before social/email/news/feeds.
++  - Phone in another room during the block.
++
++3) WEEKLY QUOTAS (CATEGORY 2B: TARGETS, FLEXIBLE)
++Training:
++- Lift heavy 3–4x/week (tracked progressive overload).
++- Zone 2 cardio 3x/week (~45 min).
++
++Cold / discomfort:
++- Cold exposure 5–7x/week (30s+ cold finish OR equivalent).
++
++Nutrition:
++- Protein target daily (1.6–2.2 g/kg).
++- Mostly whole foods by default.
++- IF 16:8 is a tool, not a religion: aim 4–7x/week if it helps.
++
++4) INTERRUPT PROTOCOLS (CATEGORY 3: WHEN IT HITS)
++4.1 Porn/validation urge (&lt;= 3 minutes, no thinking)
++1) STOP. Label: “urge”.
++2) Write one line: time + emotion + what I’m avoiding.
++3) Surf 90 seconds: observe, don’t negotiate.
++4) Replace (pick ONE):
++   - 5–10 min walk outside (default)
++   - 20 pushups / 2 min wall-sit
++   - cold shower (only if it calms, not if it spikes panic)
++5) Return to the next tiny task (2 minutes). Start the timer.
++
++4.2 Health anxiety spiral (the rule is: no data-seeking)
++1) STOP. Label: “anxiety, not data”.
++2) NO metrics. NO pulse. NO googling.
++3) Do one downshift:
++   - 5–10 min walk, or
++   - light mobility + slow nasal breathing
++4) Re-enter life via action: one concrete task for 2 minutes.
++
++4.3 Focus collapse
++1) Brain dump to paper (max 2 minutes).
++2) Classify:
++   - fatigue -&gt; 10 min break, then restart 25 min
++   - avoidance -&gt; do 5 more minutes, then reassess
++   - overstimulated -&gt; phone away + water + short walk, then restart
++
++5) MEDICAL SAFETY GATES (CARE IS ALLOWED; REASSURANCE IS NOT)
++Principle:
++- I don’t seek care to reduce anxiety. I seek care when gates are met.
++
++Gates (examples; if unsure, err on safety):
++- chest pain/pressure with exertion, fainting, severe shortness of breath
++- new neuro deficits (one-sided weakness, facial droop, speech trouble)
++- black/tarry stools with weakness/dizziness, vomiting blood
++- severe allergic reaction (swelling, wheeze)
++- high fever or worsening symptoms that persist and meaningfully impair function
++
++Rule:
++- If a gate is met -&gt; contact one trusted clinician / emergency services.
++- Otherwise -&gt; run the anxiety protocol and continue the day.
++
++6) ENVIRONMENT DEFAULTS (MAKE RELAPSE INCONVENIENT)
++- Phone: remove feeds/reels/explore. If an app is kept, it’s for messaging only.
++- Bedroom: no charger inside. Blackout + cool room.
++- Workspace: one-tab rules for deep work. Blockers allowed.
++- Social: maintain real contact weekly (loneliness is a relapse trigger).
++- Accountability: one person knows Category 1 rules.
++- Travel: rules persist; vacation is not a moral holiday.
++
++7) WEEKLY REVIEW (SUNDAY, 20–30 MIN)
++Track only what changes behavior:
++- Deep work sessions completed
++- Category 1 clean days (yes/no)
++- Training sessions (lift + zone2)
++- Sleep consistency (wake time compliance)
++- # urges surfed (win/loss)
++- # anxiety spirals (and what triggered them)
++Change ONE variable max for next week.
++Metrics (HRV, etc.) live here only, not during spirals.
++
++8) RESET RULES (NO DRAMA)
++- Category 1 violation:
++  - write: trigger -&gt; sequence -&gt; patch to environment
++  - reset the relevant counter
++  - resume immediately (no binge, no shame loop)
++- Category 2A miss:
++  - log it
++  - protect next day’s wake time + first deep work block
++- Category 2B miss:
++  - adjust schedule; don’t moralize it
++
++9) NORTH STAR (WHY THIS EXISTS)
++- clarity &gt; novelty
++- agency &gt; compulsion
++- output &gt; noise
++- long life, strong body, calm mind
++
+--
+2.43.0
+      </pre>
+
+      <p class="muted">postscript:</p>
+      <ul>
+        <li>category 1 is the line. category 2a is the minimum viable day. category 2b is weekly throughput.</li>
+        <li>if a day fails, only patch the environment. don’t negotiate the bans.</li>
+        <li>metrics belong in review; anxiety gets protocols, not data.</li>
+      </ul>
+
+      <p class="muted">/end</p>
+    </div>
+
+    <hr />
+    <br />
+
+    <marquee behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();" direction="left" loop="">
+      <a href="https://fauux.neocities.org"><img src="http://fauux.neocities.org/wiredcollectivebutton2.gif" alt="faaux"></a>
+      <a href="https://oggy.sh/"><img src="/oggy.gif" alt="my button"></a>
+      <a href="https://actovania.neocities.org/"><img src="https://actovania.neocities.org/buttons/button-actovania.gif" alt="actovania"></a>
+    </marquee>
+  </main>
+</body>
+</html>
+
